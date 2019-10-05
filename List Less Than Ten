@@ -1,0 +1,12 @@
+# List Less Than Ten
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = []
+
+maximum = int(input("Give me a number: "))
+
+for number in a:
+    if number < maximum:
+        b.append(number)
+
+print(b)

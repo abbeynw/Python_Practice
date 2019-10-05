@@ -1,0 +1,13 @@
+# Divisors
+
+num = int(input("Give me a number to divide: "))
+
+divisor_list = []
+
+possible_divisors = range(1, num)
+
+for number in possible_divisors:
+    if num % number == 0:
+        divisor_list.append(number)
+
+print(f"The divisors of your number are {divisor_list}")

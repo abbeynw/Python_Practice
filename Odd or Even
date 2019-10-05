@@ -1,0 +1,23 @@
+# Odd or Even
+
+number = int(input("Give me a number and I'll tell you if it's even or odd: "))
+
+result = number % 2
+result_by_4 = number % 4
+
+if result == 0 and result_by_4 == 0:
+    print("Your number is even and a multiple of 4.")
+elif result == 0:
+    print("Your number is even.")
+else:
+    print("Your number is odd.")
+
+num = int(input("Now give me another number. "))
+check = int(input("Give me a number to divide that by, and I'll tell you if it divides evenly. "))
+
+divisible_number = num % check
+
+if divisible_number == 0:
+    print("Your number divides evenly into the first.")
+else:
+    print("Your number does not divide evenly into the first.")
